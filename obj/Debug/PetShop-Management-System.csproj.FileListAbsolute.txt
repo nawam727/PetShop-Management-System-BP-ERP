@@ -156,3 +156,5 @@ D:\My Project\C#\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-S
 D:\My Project\C#\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.csproj.CopyComplete
 D:\My Project\C#\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.exe
 D:\My Project\C#\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.pdb
+D:\My Project\C#\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.Customers.resources
+D:\My Project\C#\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.Employees.resources
