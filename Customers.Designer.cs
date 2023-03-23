@@ -595,11 +595,11 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
+
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
+
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 5e38bceea45fda06dc9625965c5e1ab85e777f71
+
             this.Name = "Customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customers";
