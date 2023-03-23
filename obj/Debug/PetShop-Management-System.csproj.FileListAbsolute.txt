@@ -171,3 +171,5 @@ D:\Others\SE Modules\2- Year\2 - Sem\BP - ERP\Project\PetShop-Management-System-
 D:\Others\SE Modules\2- Year\2 - Sem\BP - ERP\Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.csproj.CoreCompileInputs.cache
 D:\Others\SE Modules\2- Year\2 - Sem\BP - ERP\Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.exe
 D:\Others\SE Modules\2- Year\2 - Sem\BP - ERP\Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.pdb
+D:\My Projects\C# Project\BP-ERP\PetShop-Management-System\obj\Debug\PetShop_Management_System.Customers.resources
+D:\My Projects\C# Project\BP-ERP\PetShop-Management-System\obj\Debug\PetShop_Management_System.Employees.resources
