@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace PetShop_Management_System
 {
-    public partial class Products : Form
+    public partial class Splash : Form
     {
-        public Products()
+        public Splash()
         {
             InitializeComponent();
+        }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

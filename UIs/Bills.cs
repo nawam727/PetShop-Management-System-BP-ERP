@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetShop_Management_System
+namespace PetShop_Management_System.UIs
 {
-    public partial class Splash : Form
+    public partial class Bills : Form
     {
-        public Splash()
+        public Bills()
         {
             InitializeComponent();
+        }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,10 @@ namespace PetShop_Management_System
         {
             InitializeComponent();
         }
+
+        private void Loginb_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
