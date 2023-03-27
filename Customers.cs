@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PetShop_Management_System
 {
-    public partial class Form1 : Form
+    public partial class Customers : Form
     {
-        public Form1()
+        public Customers()
         {
             InitializeComponent();
         }
