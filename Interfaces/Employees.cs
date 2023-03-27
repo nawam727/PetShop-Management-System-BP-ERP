@@ -16,8 +16,28 @@ namespace PetShop_Management_System
         public Employees()
         {
             InitializeComponent();
+            DisplayEmployees();
         }
-        SqlConnection Con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\AMANTER\\OneDrive\\Documents\\PetShopDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
+
+        private void DisplayEmployees()
+        {
+            Con.Open();
+            string Query = "Select * from EmployeeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            EmployeesDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+        private void Clear()
+        {
+            EmpNameTbl.Text = "";
+            EmpAddTbl.Text = "";
+            EmpPhoneTbl.Text = "";
+            EmpPassTbl.Text = "";
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (EmpNameTbl.Text == "" || EmpAddTbl.Text == "" || EmpPhoneTbl.Text == "" || EmpPassTbl.Text == "")
@@ -38,8 +58,9 @@ namespace PetShop_Management_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Added!");
                     Con.Close();
-                    /*DisplayEmployees();
-                    Clear();*/
+                    DisplayEmployees();
+                    Clear();
+
 
                 }
                 catch (Exception ex)
@@ -48,6 +69,12 @@ namespace PetShop_Management_System
                 }
 
             }
+        }
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+        }
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
         }
     }
 }
