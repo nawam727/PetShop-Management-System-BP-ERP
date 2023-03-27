@@ -145,48 +145,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers.cs">
+    <Compile Include="UIs\Bills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customers.Designer.cs">
+    <Compile Include="UIs\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees.cs">
+    <Compile Include="UIs\Employees.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employees.Designer.cs">
+    <Compile Include="UIs\Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="UIs\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="UIs\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Loginb.cs">
+    <Compile Include="UIs\Loginb.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loginb.Designer.cs">
+    <Compile Include="UIs\Loginb.Designer.cs">
       <DependentUpon>Loginb.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Splash.cs">
+    <Compile Include="UIs\Products.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Splash.Designer.cs">
+    <Compile Include="UIs\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Customers.resx">
+    <EmbeddedResource Include="UIs\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employees.resx">
+    <EmbeddedResource Include="UIs\Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="UIs\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loginb.resx">
+    <EmbeddedResource Include="UIs\Loginb.resx">
       <DependentUpon>Loginb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -199,7 +214,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Splash.resx">
+    <EmbeddedResource Include="UIs\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

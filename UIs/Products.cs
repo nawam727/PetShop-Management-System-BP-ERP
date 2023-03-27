@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetShop_Management_System
+namespace PetShop_Management_System.UIs
 {
-    public partial class Home : Form
+    public partial class Products : Form
     {
-        public Home()
+        public Products()
         {
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
 
         }

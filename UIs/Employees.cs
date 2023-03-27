@@ -76,5 +76,10 @@ namespace PetShop_Management_System
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
         }
+
+        private void Employees_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
