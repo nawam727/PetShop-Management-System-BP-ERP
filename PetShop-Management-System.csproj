@@ -145,48 +145,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers.cs">
+    <Compile Include="Interfaces\Customers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customers.Designer.cs">
+    <Compile Include="Interfaces\Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees.cs">
+    <Compile Include="Interfaces\Employees.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employees.Designer.cs">
+    <Compile Include="Interfaces\Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Interfaces\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="Interfaces\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Loginb.cs">
+    <Compile Include="Interfaces\Loginb.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loginb.Designer.cs">
+    <Compile Include="Interfaces\Loginb.Designer.cs">
       <DependentUpon>Loginb.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Splash.cs">
+    <Compile Include="Interfaces\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Splash.Designer.cs">
+    <Compile Include="Interfaces\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Customers.resx">
+    <EmbeddedResource Include="Interfaces\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employees.resx">
+    <EmbeddedResource Include="Interfaces\Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="Interfaces\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loginb.resx">
+    <EmbeddedResource Include="Interfaces\Loginb.resx">
       <DependentUpon>Loginb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -199,7 +199,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Splash.resx">
+    <EmbeddedResource Include="Interfaces\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
