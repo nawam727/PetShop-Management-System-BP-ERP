@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetShop_Management_System.UIs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +39,10 @@ namespace PetShop_Management_System
             EmpPhoneTbl.Text = "";
             EmpPassTbl.Text = "";
         }
+
+        int Key = 0;
+
+        //To add the customers to the db
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (EmpNameTbl.Text == "" || EmpAddTbl.Text == "" || EmpPhoneTbl.Text == "" || EmpPassTbl.Text == "")
@@ -70,16 +75,108 @@ namespace PetShop_Management_System
 
             }
         }
+
+        //To edit customer informations in DB
         private void EditBtn_Click(object sender, EventArgs e)
         {
+            if (EmpNameTbl.Text == "" || EmpAddTbl.Text == "" || EmpPhoneTbl.Text == "" || EmpPassTbl.Text == "")
+            {
+                MessageBox.Show("Select an Employee!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("update EmployeeTbl set EmpName=@EN,EmpAdd=@EA,EmpDOB=@ED,EmpPhone=@EP,EmpPass=@EPa where EmpNum=@EKey", Con);
+                    cmd.Parameters.AddWithValue("@EN", EmpNameTbl.Text);
+                    cmd.Parameters.AddWithValue("@EA", EmpAddTbl.Text);
+                    cmd.Parameters.AddWithValue("@ED", DOBTbl.Value.Date);
+                    cmd.Parameters.AddWithValue("@EP", EmpPhoneTbl.Text);
+                    cmd.Parameters.AddWithValue("@EPa", EmpPassTbl.Text);
+                    cmd.Parameters.AddWithValue("@EKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Updated!");
+                    Con.Close();
+                    DisplayEmployees();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
         }
+
+        //To delete employees details from the table
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select an Employee!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("delete from EmployeeTbl where EmpNum = @EmpKey", Con);
+                    cmd.Parameters.AddWithValue("@EmpKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Deleted!");
+                    Con.Close();
+                    DisplayEmployees();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
         }
 
         private void Employees_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Home obj = new Home();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Products obj = new Products();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            Loginb obj = new Loginb();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Customers obj = new Customers();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Bills obj = new Bills();
+            obj.Show();
+            this.Hide();
         }
     }
 }
