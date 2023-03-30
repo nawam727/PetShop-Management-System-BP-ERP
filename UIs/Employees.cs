@@ -76,6 +76,24 @@ namespace PetShop_Management_System
             }
         }
 
+        private void EmployeesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            EmpNameTbl.Text = EmployeesDGV.SelectedRows[0].Cells[1].Value.ToString();
+            EmpAddTbl.Text = EmployeesDGV.SelectedRows[0].Cells[2].Value.ToString();
+            DOBTbl.Text = EmployeesDGV.SelectedRows[0].Cells[3].Value.ToString();
+            EmpPhoneTbl.Text = EmployeesDGV.SelectedRows[0].Cells[4].Value.ToString();
+            EmpPassTbl.Text = EmployeesDGV.SelectedRows[0].Cells[5].Value.ToString();
+
+            if (EmpNameTbl.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(EmployeesDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
         //To edit customer informations in DB
         private void EditBtn_Click(object sender, EventArgs e)
         {
@@ -178,5 +196,7 @@ namespace PetShop_Management_System
             obj.Show();
             this.Hide();
         }
+
+        
     }
 }
