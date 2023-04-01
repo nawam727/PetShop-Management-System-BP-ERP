@@ -17,10 +17,95 @@ namespace PetShop_Management_System.UIs
         public Bills()
         {
             InitializeComponent();
+            GetCustomers();
+            DisplayProduct();
+            DisplayTransaction();
         }
 
         //Connect to the database
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
+
+        //Get customers from the DB
+        private void GetCustomers()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select CustID from CustomerTbl", Con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CustID", typeof(int));
+            dt.Load(Rdr);
+            CustIDCB.ValueMember = "CustID";
+            CustIDCB.DataSource = dt;
+            Con.Close();
+        }
+
+        //Display product details from the DB
+        private void DisplayProduct()
+        {
+            Con.Open();
+            string Query = "select * from ProductTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ProductDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        //Display Transaction
+        private void DisplayTransaction()
+        {
+            Con.Open();
+            string Query = "select * from BillTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            TransDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        //Get customers name from BD to TextBox
+        private void GetCustName()
+        {
+            if (Con.State == ConnectionState.Closed)
+            {
+                Con.Open();
+            }
+            string Query = "select * from CustomerTbl where CustID = '" + CustIDCB.SelectedValue.ToString() + "'";
+            SqlCommand cmd = new SqlCommand(Query, Con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CustNameTbl.Text = dr["CustName"].ToString();
+            }
+            Con.Close();
+        }
+
+        //Updating the stock 
+        private void UpdateStock()
+        {
+            try
+            {
+                int NewQty = Stock - Convert.ToInt32(PrQuantityTbl.Text);
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("update ProductTbl set PrQty=@PQ where ProID=@PKey", Con);
+                cmd.Parameters.AddWithValue("@PQ", NewQty);
+
+                cmd.Parameters.AddWithValue("@PKey", Key);
+
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                DisplayProduct();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void AddColumnsToDataGridView()
         {
@@ -68,10 +153,28 @@ namespace PetShop_Management_System.UIs
 
         private void CustIDCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            GetCustName();
+        }
 
+        //Reset
+        private void Reset()
+        {
+            PrNameTbl.Text = "";
+            PrQuantityTbl.Text = "";
+            PrPriceTbl.Text = "";
+            Stock = 0;
+            Key = 0;
         }
 
         int Key = 0, Stock = 0;
+
+
+        //Reset button
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            Reset();
+        }
+
         private void AddBtn_Click(object sender, EventArgs e)
         {
             if (PrQuantityTbl.Text == "" || Convert.ToInt32(PrQuantityTbl.Text) > Stock)
@@ -102,8 +205,8 @@ namespace PetShop_Management_System.UIs
                 BillDGV.Rows.Add(newRow);
                 n++;
                 TotalLbl.Text = "RS " + GrdTotal;
-                //UpdateStock();
-                //Reset();
+                UpdateStock();
+                Reset();
             }
         }
     }
