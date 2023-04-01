@@ -17,10 +17,54 @@ namespace PetShop_Management_System.UIs
         public Bills()
         {
             InitializeComponent();
+            GetCustomers();
+            DisplayProduct();
+            DisplayTransaction();
         }
 
         //Connect to the database
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
+
+        //Get customers from the DB
+        private void GetCustomers()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select CustID from CustomerTbl", Con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CustID", typeof(int));
+            dt.Load(Rdr);
+            CustIDCB.ValueMember = "CustID";
+            CustIDCB.DataSource = dt;
+            Con.Close();
+        }
+
+        //Display product details from the DB
+        private void DisplayProduct()
+        {
+            Con.Open();
+            string Query = "select * from ProductTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ProductDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        //Display Transaction
+        private void DisplayTransaction()
+        {
+            Con.Open();
+            string Query = "select * from BillTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder Builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            TransDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
 
         private void AddColumnsToDataGridView()
         {
