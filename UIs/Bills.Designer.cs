@@ -41,7 +41,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TotalLbl = new System.Windows.Forms.Label();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.printBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.BillDGV = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.label16 = new System.Windows.Forms.Label();
             this.TransDGV = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -110,7 +110,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.TotalLbl);
-            this.panel1.Controls.Add(this.bunifuThinButton21);
+            this.panel1.Controls.Add(this.printBtn);
             this.panel1.Controls.Add(this.BillDGV);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.TransDGV);
@@ -133,30 +133,31 @@
             this.TotalLbl.TabIndex = 19;
             this.TotalLbl.Text = "RS";
             // 
-            // bunifuThinButton21
+            // printBtn
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Print";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Bisque;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(518, 299);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(145, 39);
-            this.bunifuThinButton21.TabIndex = 19;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.printBtn.ActiveBorderThickness = 1;
+            this.printBtn.ActiveCornerRadius = 20;
+            this.printBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.printBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.printBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.printBtn.BackColor = System.Drawing.Color.White;
+            this.printBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("printBtn.BackgroundImage")));
+            this.printBtn.ButtonText = "Print";
+            this.printBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.printBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printBtn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.printBtn.IdleBorderThickness = 1;
+            this.printBtn.IdleCornerRadius = 20;
+            this.printBtn.IdleFillColor = System.Drawing.Color.Bisque;
+            this.printBtn.IdleForecolor = System.Drawing.Color.Black;
+            this.printBtn.IdleLineColor = System.Drawing.Color.Black;
+            this.printBtn.Location = new System.Drawing.Point(518, 299);
+            this.printBtn.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(145, 39);
+            this.printBtn.TabIndex = 19;
+            this.printBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // BillDGV
             // 
@@ -357,6 +358,7 @@
             this.ProductDGV.Size = new System.Drawing.Size(485, 322);
             this.ProductDGV.TabIndex = 16;
             this.ProductDGV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.ProductDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDGV_CellContentClick);
             // 
             // label15
             // 
@@ -542,6 +544,10 @@
             this.label8.Size = new System.Drawing.Size(67, 24);
             this.label8.TabIndex = 5;
             this.label8.Text = "Billing";
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // pictureBox4
             // 
@@ -817,7 +823,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label TotalLbl;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 printBtn;
         private Bunifu.UI.WinForms.BunifuDataGridView BillDGV;
         private System.Windows.Forms.Label label16;
         private Bunifu.UI.WinForms.BunifuDataGridView TransDGV;
