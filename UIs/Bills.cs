@@ -175,6 +175,76 @@ namespace PetShop_Management_System.UIs
             Reset();
         }
 
+        //Printing the bill
+        int prodid, prodqty, prodprice, total, pos = 60;
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("Pet Hotel Pet Care Center", new Font("FAKE RECEIPT", 12, FontStyle.Bold), Brushes.Black, new Point(80));
+            e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("FAKE RECEIPT", 10, FontStyle.Bold), Brushes.Black, new Point(26, 20));
+            foreach (DataGridViewRow row in BillDGV.Rows)
+            {
+                prodid = Convert.ToInt32(row.Cells["Column1"].Value);
+                prodname = "" + row.Cells["Column2"].Value;
+                prodprice = Convert.ToInt32(row.Cells["Column3"].Value);
+                prodqty = Convert.ToInt32(row.Cells["Column4"].Value);
+                total = Convert.ToInt32(row.Cells["Column5"].Value);
+
+                e.Graphics.DrawString("" + prodid, new Font("FAKE RECEIPT", 8, FontStyle.Bold), Brushes.Black, new Point(26, pos));
+                e.Graphics.DrawString("" + prodname, new Font("FAKE RECEIPT", 8, FontStyle.Bold), Brushes.Black, new Point(45, pos));
+                e.Graphics.DrawString("" + prodprice, new Font("FAKE RECEIPT", 8, FontStyle.Bold), Brushes.Black, new Point(120, pos));
+                e.Graphics.DrawString("" + prodqty, new Font("FAKE RECEIPT", 8, FontStyle.Bold), Brushes.Black, new Point(170, pos));
+                e.Graphics.DrawString("" + total, new Font("FAKE RECEIPT", 8, FontStyle.Bold), Brushes.Black, new Point(235, pos));
+                pos += 20;
+            }
+            e.Graphics.DrawString("Grand Total: Rs " + GrdTotal, new Font("FAKE RECEIPT", 12, FontStyle.Bold), Brushes.Black, new Point(50, pos + 50));
+            e.Graphics.DrawString("***********PET SHOP***********", new Font("FAKE RECEIPT", 8, FontStyle.Bold), Brushes.Black, new Point(10, pos + 85));
+            BillDGV.Rows.Clear();
+            BillDGV.Refresh();
+            pos = 100;
+            GrdTotal = 0;
+            n = 0;
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            InsertBill();
+            printDocument1.DefaultPageSettings.PaperSize = new System.Drawing.Printing.PaperSize("pprnm", 350, 600);
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+
+
+
+        //Print the bill when print button is clicked
+        private void InsertBill()
+        {
+            try
+            {
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("insert into BillTbl values(@BD,@CI,@CN,@EN,@Am)", Con);
+                cmd.Parameters.AddWithValue("@BD", DateTime.Today.Date);
+                cmd.Parameters.AddWithValue("@CI", CustIDCB.Text);
+                cmd.Parameters.AddWithValue("@CN", CustNameTbl.Text);
+                cmd.Parameters.AddWithValue("@EN", EmpNameLbl.Text);
+                cmd.Parameters.AddWithValue("@Am", GrdTotal);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Bill Saved!");
+                Con.Close();
+                DisplayTransaction();
+                //Clear();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        string prodname;
+
         private void AddBtn_Click(object sender, EventArgs e)
         {
             if (PrQuantityTbl.Text == "" || Convert.ToInt32(PrQuantityTbl.Text) > Stock)
