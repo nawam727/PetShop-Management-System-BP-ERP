@@ -130,5 +130,67 @@ namespace PetShop_Management_System
             obj.Show();
             this.Hide();
         }
+
+        //Edit button
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CustNameTbl.Text == "" || CustAddTbl.Text == "" || CustPhoneTbl.Text == "")
+            {
+                MessageBox.Show("Select Customer!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("update CustomerTbl set CustName=@CN,CustAdd=@CA,CustPhone=@CP where CustID=@CKey", Con);
+                    cmd.Parameters.AddWithValue("@CN", CustNameTbl.Text);
+                    cmd.Parameters.AddWithValue("@CA", CustAddTbl.Text);
+                    cmd.Parameters.AddWithValue("@CP", CustPhoneTbl.Text);
+                    cmd.Parameters.AddWithValue("@CKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Customer Updated!");
+                    Con.Close();
+                    DisplayCustomers();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+
+        //Delete button
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a Customer!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("delete from CustomerTbl where CustID = @CustKey", Con);
+                    cmd.Parameters.AddWithValue("@CustKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Customer Deleted!");
+                    Con.Close();
+                    DisplayCustomers();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
     }
 }
