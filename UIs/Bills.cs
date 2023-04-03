@@ -17,6 +17,7 @@ namespace PetShop_Management_System.UIs
         public Bills()
         {
             InitializeComponent();
+            AddColumnsToDataGridView();
             GetCustomers();
             DisplayProduct();
             DisplayTransaction();
@@ -178,6 +179,8 @@ namespace PetShop_Management_System.UIs
         //Printing the bill
         int prodid, prodqty, prodprice, total, pos = 60;
 
+        string prodname;
+
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString("Pet Hotel Pet Care Center", new Font("FAKE RECEIPT", 12, FontStyle.Bold), Brushes.Black, new Point(80));
@@ -243,7 +246,7 @@ namespace PetShop_Management_System.UIs
             }
         }
 
-        string prodname;
+        
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
@@ -277,6 +280,23 @@ namespace PetShop_Management_System.UIs
                 TotalLbl.Text = "RS " + GrdTotal;
                 UpdateStock();
                 Reset();
+            }
+        }
+
+        //Display updated product
+        private void ProductDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PrNameTbl.Text = ProductDGV.SelectedRows[0].Cells[1].Value.ToString();
+            //cu.Text = ProductDGV.SelectedRows[0].Cells[2].Value.ToString();
+            Stock = Convert.ToInt32(ProductDGV.SelectedRows[0].Cells[3].Value.ToString());
+            PrPriceTbl.Text = ProductDGV.SelectedRows[0].Cells[4].Value.ToString();
+            if (PrNameTbl.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(ProductDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
     }
