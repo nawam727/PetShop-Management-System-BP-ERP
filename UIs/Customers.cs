@@ -16,11 +16,14 @@ namespace PetShop_Management_System
         public Customers()
         {
             InitializeComponent();
+            DisplayCustomers();
         }
 
         //Connect to the database
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
 
+
+        //Display Customer
         private void DisplayCustomers()
         {
             Con.Open();
@@ -72,6 +75,23 @@ namespace PetShop_Management_System
                     MessageBox.Show(ex.Message);
                 }
 
+            }
+        }
+
+        //Display customers details
+        private void CustomerDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CustNameTbl.Text = CustomerDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CustAddTbl.Text = CustomerDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CustPhoneTbl.Text = CustomerDGV.SelectedRows[0].Cells[3].Value.ToString();
+
+            if (CustNameTbl.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(CustomerDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
     }
