@@ -82,5 +82,33 @@ namespace PetShop_Management_System.UIs
 
             }
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select an Employee!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("delete from ProductTbl where ProID = @PKey", Con);
+                    cmd.Parameters.AddWithValue("@PKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Deleted!");
+                    Con.Close();
+                   // DisplayProducts();
+                    //Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
     }
 }
