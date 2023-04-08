@@ -36,8 +36,16 @@ namespace PetShop_Management_System.UIs
             Con.Close();
         }
 
-        int Key = 0;
+        private void Clear()
+        {
+            PrNameTbl.Text = "";
+            PrCatTbl.SelectedIndex = 0;
+            PrQuantityTbl.Text = "";
+            PrPriceTbl.Text = "";
+        }
 
+        int Key = 0;
+        //Save button
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (PrNameTbl.Text == "" || PrCatTbl.SelectedIndex == -1 || PrQuantityTbl.Text == "" || PrPriceTbl.Text == "")
@@ -65,7 +73,7 @@ namespace PetShop_Management_System.UIs
 
             }
         }
-
+        //Edit button
         private void EditBtn_Click(object sender, EventArgs e)
         {
             if (PrNameTbl.Text == "" || PrCatTbl.SelectedIndex == -1 || PrQuantityTbl.Text == "" || PrPriceTbl.Text == "")
@@ -86,8 +94,8 @@ namespace PetShop_Management_System.UIs
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Updated!");
                     Con.Close();
-                   // DisplayProducts();
-                    //Clear();
+                    DisplayProducts();
+                    Clear();
 
                 }
                 catch (Exception ex)
@@ -97,7 +105,7 @@ namespace PetShop_Management_System.UIs
 
             }
         }
-
+        //Delete button
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
             if (Key == 0)
@@ -114,8 +122,8 @@ namespace PetShop_Management_System.UIs
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Deleted!");
                     Con.Close();
-                   // DisplayProducts();
-                    //Clear();
+                    DisplayProducts();
+                    Clear();
 
                 }
                 catch (Exception ex)
