@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -168,6 +168,7 @@
             this.DeleteBtn.Size = new System.Drawing.Size(193, 48);
             this.DeleteBtn.TabIndex = 10;
             this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // EditBtn
             // 
@@ -193,6 +194,7 @@
             this.EditBtn.Size = new System.Drawing.Size(193, 48);
             this.EditBtn.TabIndex = 14;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // SaveBtn
             // 
@@ -322,6 +324,7 @@
             this.label3.Size = new System.Drawing.Size(143, 29);
             this.label3.TabIndex = 43;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox5
             // 
@@ -354,22 +357,22 @@
             // CustomerDGV
             // 
             this.CustomerDGV.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.CustomerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            this.CustomerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.CustomerDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CustomerDGV.BackgroundColor = System.Drawing.Color.Linen;
             this.CustomerDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CustomerDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.CustomerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CustomerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CustomerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.CustomerDGV.ColumnHeadersHeight = 40;
             this.CustomerDGV.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.CustomerDGV.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -389,14 +392,14 @@
             this.CustomerDGV.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.CustomerDGV.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.CustomerDGV.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CustomerDGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CustomerDGV.DefaultCellStyle = dataGridViewCellStyle21;
             this.CustomerDGV.EnableHeadersVisualStyles = false;
             this.CustomerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.CustomerDGV.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -412,6 +415,7 @@
             this.CustomerDGV.Size = new System.Drawing.Size(1265, 411);
             this.CustomerDGV.TabIndex = 16;
             this.CustomerDGV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerDGV_CellContentClick);
             // 
             // label15
             // 
@@ -483,6 +487,7 @@
             this.label6.Size = new System.Drawing.Size(93, 29);
             this.label6.TabIndex = 55;
             this.label6.Text = "Logout";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -494,6 +499,7 @@
             this.label5.Size = new System.Drawing.Size(87, 29);
             this.label5.TabIndex = 53;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label1
             // 
@@ -505,6 +511,7 @@
             this.label1.Size = new System.Drawing.Size(82, 29);
             this.label1.TabIndex = 51;
             this.label1.Text = "Home";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -516,6 +523,7 @@
             this.label2.Size = new System.Drawing.Size(116, 29);
             this.label2.TabIndex = 48;
             this.label2.Text = "Products";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // bunifuElipse4
             // 
