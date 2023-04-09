@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop-Management-System", "PetShop-Management-System.csproj", "{E76F8668-360F-45F6-B3A4-14D6A547EF51}"
 EndProject
 <<<<<<< HEAD
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP-ERP-Final-Project", "C:\Users\Nuthara Yuthmini\Downloads\BP-ERP-Final-Project\BP-ERP-Final-Project\BP-ERP-Final-Project.csproj", "{94EFEC70-21C0-4790-93F1-D59D7D4EA421}"
+=======
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP-ERP-Final-Project", "C:\Users\AMANTER\Downloads\BP-ERP-Final-Project\BP-ERP-Final-Project\BP-ERP-Final-Project.csproj", "{94EFEC70-21C0-4790-93F1-D59D7D4EA421}"
 =======
 <<<<<<< HEAD
@@ -14,6 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP-ERP-Final-Project", "..\
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP-ERP-Final-Project", "..\..\..\NSBM Lecture Contents\2nd year\2nd sem\BP ERP\Project\BP-ERP-Final-Project\BP-ERP-Final-Project.csproj", "{94EFEC70-21C0-4790-93F1-D59D7D4EA421}"
 >>>>>>> f6c92e4c415138c763f68124f120901f32b61c2f
 >>>>>>> 5bf30c61a9e92b9621edfe3662c3a1a109c9a17f
+>>>>>>> 30cc965b0bdddc61f72b3e74e08681358e321ea5
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
