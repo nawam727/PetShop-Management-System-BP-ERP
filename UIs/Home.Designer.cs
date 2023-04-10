@@ -246,6 +246,7 @@
             this.label4.Size = new System.Drawing.Size(109, 24);
             this.label4.TabIndex = 23;
             this.label4.Text = "Customers";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox3
             // 
@@ -266,6 +267,7 @@
             this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 21;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox2
             // 
@@ -378,6 +380,7 @@
             this.label5.Size = new System.Drawing.Size(67, 24);
             this.label5.TabIndex = 25;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // bunifuElipse8
             // 
@@ -494,6 +497,7 @@
             this.label2.Size = new System.Drawing.Size(92, 24);
             this.label2.TabIndex = 17;
             this.label2.Text = "Products";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Home
             // 
@@ -516,6 +520,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";

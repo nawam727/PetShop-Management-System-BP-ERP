@@ -21,6 +21,13 @@ namespace PetShop_Management_System
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
         private void Loginb_Load(object sender, EventArgs e)
         {
+          
+        }
+
+
+        //Login button
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
             string username = UsernameTb.Text;
             string password = PasswordTb.Text;
 
@@ -59,11 +66,6 @@ namespace PetShop_Management_System
             {
                 Con.Close();
             }
-        }
-
-        private void LoginBtn_Click(object sender, EventArgs e)
-        {
-
         }
 
         //Exit button
