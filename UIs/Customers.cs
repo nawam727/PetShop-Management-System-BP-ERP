@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetShop_Management_System.UIs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,14 @@ namespace PetShop_Management_System
         public Customers()
         {
             InitializeComponent();
+            DisplayCustomers();
         }
 
         //Connect to the database
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
 
+
+        //Display Customer
         private void DisplayCustomers()
         {
             Con.Open();
@@ -62,6 +66,120 @@ namespace PetShop_Management_System
                     cmd.Parameters.AddWithValue("@CP", CustPhoneTbl.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Customer Added!");
+                    Con.Close();
+                    DisplayCustomers();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        //Display customers details
+        private void CustomerDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CustNameTbl.Text = CustomerDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CustAddTbl.Text = CustomerDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CustPhoneTbl.Text = CustomerDGV.SelectedRows[0].Cells[3].Value.ToString();
+
+            if (CustNameTbl.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(CustomerDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Home obj = new Home();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Products obj = new Products();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Employees obj = new Employees();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Bills obj = new Bills();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Loginb obj = new Loginb();
+            obj.Show();
+            this.Hide();
+        }
+
+        //Edit button
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CustNameTbl.Text == "" || CustAddTbl.Text == "" || CustPhoneTbl.Text == "")
+            {
+                MessageBox.Show("Select Customer!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("update CustomerTbl set CustName=@CN,CustAdd=@CA,CustPhone=@CP where CustID=@CKey", Con);
+                    cmd.Parameters.AddWithValue("@CN", CustNameTbl.Text);
+                    cmd.Parameters.AddWithValue("@CA", CustAddTbl.Text);
+                    cmd.Parameters.AddWithValue("@CP", CustPhoneTbl.Text);
+                    cmd.Parameters.AddWithValue("@CKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Customer Updated!");
+                    Con.Close();
+                    DisplayCustomers();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+
+        //Delete button
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a Customer!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("delete from CustomerTbl where CustID = @CustKey", Con);
+                    cmd.Parameters.AddWithValue("@CustKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Customer Deleted!");
                     Con.Close();
                     DisplayCustomers();
                     Clear();

@@ -1,6 +1,6 @@
-﻿namespace PetShop_Management_System
+﻿namespace PetShop_Management_System.UIs
 {
-    partial class Loginb
+    partial class AdminLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loginb));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.PasswordTb = new System.Windows.Forms.TextBox();
             this.UsernameTb = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +58,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(426, 151);
-            this.panel1.TabIndex = 10;
+            this.panel1.TabIndex = 18;
             // 
             // pictureBox2
             // 
@@ -68,7 +69,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -102,7 +102,7 @@
             this.label4.Location = new System.Drawing.Point(187, 472);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 26);
-            this.label4.TabIndex = 17;
+            this.label4.TabIndex = 25;
             this.label4.Text = "Admin";
             // 
             // LoginBtn
@@ -127,9 +127,8 @@
             this.LoginBtn.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(181, 55);
-            this.LoginBtn.TabIndex = 16;
+            this.LoginBtn.TabIndex = 24;
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // bunifuThinButton21
             // 
@@ -149,11 +148,11 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Linen;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(140, 711);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(140, 626);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(199, 66);
-            this.bunifuThinButton21.TabIndex = 15;
+            this.bunifuThinButton21.TabIndex = 23;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -163,17 +162,17 @@
             this.label3.Location = new System.Drawing.Point(102, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 34);
-            this.label3.TabIndex = 14;
+            this.label3.TabIndex = 22;
             this.label3.Text = "Password";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(102, 207);
+            this.label2.Location = new System.Drawing.Point(112, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 34);
-            this.label2.TabIndex = 13;
+            this.label2.TabIndex = 21;
             this.label2.Text = "Username";
             // 
             // PasswordTb
@@ -182,7 +181,7 @@
             this.PasswordTb.Location = new System.Drawing.Point(108, 359);
             this.PasswordTb.Name = "PasswordTb";
             this.PasswordTb.Size = new System.Drawing.Size(213, 31);
-            this.PasswordTb.TabIndex = 12;
+            this.PasswordTb.TabIndex = 20;
             this.PasswordTb.UseSystemPasswordChar = true;
             // 
             // UsernameTb
@@ -191,14 +190,25 @@
             this.UsernameTb.Location = new System.Drawing.Point(108, 255);
             this.UsernameTb.Name = "UsernameTb";
             this.UsernameTb.Size = new System.Drawing.Size(213, 31);
-            this.UsernameTb.TabIndex = 11;
+            this.UsernameTb.TabIndex = 19;
             // 
-            // Loginb
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(102, 207);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 34);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Username";
+            // 
+            // AdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(426, 607);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LoginBtn);
@@ -209,9 +219,9 @@
             this.Controls.Add(this.UsernameTb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Loginb";
+            this.Name = "AdminLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "AdminLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -235,6 +245,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox PasswordTb;
         private System.Windows.Forms.TextBox UsernameTb;
+        private System.Windows.Forms.Label label5;
     }
 }
-
