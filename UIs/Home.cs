@@ -17,6 +17,9 @@ namespace PetShop_Management_System
         public Home()
         {
             InitializeComponent();
+            CountDogs();
+            CountCats();
+            CountBirds();
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -39,6 +42,27 @@ namespace PetShop_Management_System
             DataTable dt = new DataTable();
             sda.Fill(dt);
             DogsLbl.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+
+        private void CountCats()
+        {
+            string Cat = "Cats";
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from ProductTbl where PrCat= '" + Cat + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            CatsLbl.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+        private void CountBirds()
+        {
+            string Bird = "Birds";
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from ProductTbl where PrCat= '" + Bird + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            BirdsLbl.Text = dt.Rows[0][0].ToString();
             Con.Close();
         }
         private void label2_Click(object sender, EventArgs e)
