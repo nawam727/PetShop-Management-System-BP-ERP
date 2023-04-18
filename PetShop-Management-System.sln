@@ -5,11 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShop-Management-System", "PetShop-Management-System.csproj", "{E76F8668-360F-45F6-B3A4-14D6A547EF51}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP-ERP-Final-Project", "..\..\BP-ERP-Final-Project\BP-ERP-Final-Project.csproj", "{94EFEC70-21C0-4790-93F1-D59D7D4EA421}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP-ERP-Final-Project", "..\..\..\NSBM Lecture Contents\2nd year\2nd sem\BP ERP\Project\BP-ERP-Final-Project\BP-ERP-Final-Project.csproj", "{94EFEC70-21C0-4790-93F1-D59D7D4EA421}"
->>>>>>> f6c92e4c415138c763f68124f120901f32b61c2f
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
