@@ -179,6 +179,11 @@ namespace PetShop_Management_System.UIs
         //Printing the bill
         int prodid, prodqty, prodprice, total, pos = 60;
 
+        private void TransDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         string prodname;
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)

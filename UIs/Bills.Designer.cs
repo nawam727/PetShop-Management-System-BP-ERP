@@ -288,6 +288,7 @@
             this.TransDGV.Size = new System.Drawing.Size(450, 322);
             this.TransDGV.TabIndex = 18;
             this.TransDGV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.TransDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TransDGV_CellContentClick);
             // 
             // label14
             // 
