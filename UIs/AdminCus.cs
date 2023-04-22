@@ -16,5 +16,10 @@ namespace PetShop_Management_System.UIs
         {
             InitializeComponent();
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

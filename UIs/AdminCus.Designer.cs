@@ -282,6 +282,7 @@
             this.SaveBtn.Size = new System.Drawing.Size(145, 39);
             this.SaveBtn.TabIndex = 9;
             this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label13
             // 

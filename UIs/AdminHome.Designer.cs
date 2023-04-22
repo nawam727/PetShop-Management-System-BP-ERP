@@ -247,6 +247,7 @@
             this.CatsLbl.Size = new System.Drawing.Size(46, 24);
             this.CatsLbl.TabIndex = 16;
             this.CatsLbl.Text = "Cats";
+            this.CatsLbl.Click += new System.EventHandler(this.CatsLbl_Click);
             // 
             // label10
             // 
