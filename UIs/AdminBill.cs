@@ -16,5 +16,10 @@ namespace PetShop_Management_System.UIs
         {
             InitializeComponent();
         }
+
+        private void TransDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

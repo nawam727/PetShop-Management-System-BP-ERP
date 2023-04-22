@@ -424,3 +424,8 @@ D:\OneDrive - NSBM\Y2S2\BP\assign\pet shop\PetShop-Management-System-BP-ERP\obj\
 D:\OneDrive - NSBM\Y2S2\BP\assign\pet shop\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.csproj.CopyComplete
 D:\OneDrive - NSBM\Y2S2\BP\assign\pet shop\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.exe
 D:\OneDrive - NSBM\Y2S2\BP\assign\pet shop\PetShop-Management-System-BP-ERP\obj\Debug\PetShop-Management-System.pdb
+D:\My Projects\C# Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.UIs.AdminBill.resources
+D:\My Projects\C# Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.UIs.AdminCus.resources
+D:\My Projects\C# Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.UIs.AdminEmp.resources
+D:\My Projects\C# Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.UIs.AdminHome.resources
+D:\My Projects\C# Project\PetShop-Management-System-BP-ERP\obj\Debug\PetShop_Management_System.UIs.AdminPro.resources
