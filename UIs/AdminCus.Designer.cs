@@ -91,7 +91,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(81, 420);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(41, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(20, 7);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(41, 39);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +177,7 @@
             this.CustomerDGV.HeaderBgColor = System.Drawing.Color.Empty;
             this.CustomerDGV.HeaderForeColor = System.Drawing.Color.White;
             this.CustomerDGV.Location = new System.Drawing.Point(21, 450);
-            this.CustomerDGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerDGV.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerDGV.Name = "CustomerDGV";
             this.CustomerDGV.RowHeadersVisible = false;
             this.CustomerDGV.RowHeadersWidth = 51;
@@ -186,6 +186,7 @@
             this.CustomerDGV.Size = new System.Drawing.Size(1265, 411);
             this.CustomerDGV.TabIndex = 16;
             this.CustomerDGV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.CustomerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerDGV_CellContentClick);
             // 
             // bunifuElipse4
             // 
@@ -208,7 +209,7 @@
             this.panel3.Controls.Add(this.CustNameTbl);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(21, 21);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1265, 375);
             this.panel3.TabIndex = 0;
@@ -262,6 +263,7 @@
             this.EditBtn.Size = new System.Drawing.Size(193, 48);
             this.EditBtn.TabIndex = 14;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // SaveBtn
             // 
@@ -304,7 +306,7 @@
             // 
             this.CustPhoneTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustPhoneTbl.Location = new System.Drawing.Point(804, 132);
-            this.CustPhoneTbl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustPhoneTbl.Margin = new System.Windows.Forms.Padding(4);
             this.CustPhoneTbl.Name = "CustPhoneTbl";
             this.CustPhoneTbl.Size = new System.Drawing.Size(247, 30);
             this.CustPhoneTbl.TabIndex = 10;
@@ -324,7 +326,7 @@
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(813, 132);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(237, 30);
             this.textBox3.TabIndex = 10;
@@ -344,7 +346,7 @@
             // 
             this.CustAddTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustAddTbl.Location = new System.Drawing.Point(480, 132);
-            this.CustAddTbl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustAddTbl.Margin = new System.Windows.Forms.Padding(4);
             this.CustAddTbl.Multiline = true;
             this.CustAddTbl.Name = "CustAddTbl";
             this.CustAddTbl.Size = new System.Drawing.Size(283, 131);
@@ -365,7 +367,7 @@
             // 
             this.CustNameTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustNameTbl.Location = new System.Drawing.Point(216, 132);
-            this.CustNameTbl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustNameTbl.Margin = new System.Windows.Forms.Padding(4);
             this.CustNameTbl.Name = "CustNameTbl";
             this.CustNameTbl.Size = new System.Drawing.Size(223, 30);
             this.CustNameTbl.TabIndex = 6;
@@ -409,7 +411,7 @@
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(407, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1312, 879);
             this.panel1.TabIndex = 59;
@@ -425,7 +427,7 @@
             this.panel4.Controls.Add(this.pictureBox8);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Location = new System.Drawing.Point(64, 508);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(312, 57);
             this.panel4.TabIndex = 61;
@@ -440,12 +442,13 @@
             this.label3.Size = new System.Drawing.Size(143, 29);
             this.label3.TabIndex = 57;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(81, 622);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(41, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -456,7 +459,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(81, 785);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(41, 39);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -500,7 +503,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(81, 320);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(41, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -511,7 +514,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(41, 39);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -528,6 +531,7 @@
             this.label6.Size = new System.Drawing.Size(93, 29);
             this.label6.TabIndex = 69;
             this.label6.Text = "Logout";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -539,6 +543,7 @@
             this.label5.Size = new System.Drawing.Size(87, 29);
             this.label5.TabIndex = 67;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label1
             // 
@@ -550,6 +555,7 @@
             this.label1.Size = new System.Drawing.Size(82, 29);
             this.label1.TabIndex = 65;
             this.label1.Text = "Home";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -561,12 +567,13 @@
             this.label2.Size = new System.Drawing.Size(116, 29);
             this.label2.TabIndex = 62;
             this.label2.Text = "Products";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(81, 214);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -599,7 +606,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminCus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminCus";

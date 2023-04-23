@@ -75,6 +75,75 @@ namespace PetShop_Management_System.UIs
         }
 
         //Display customers details
+        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Home obj = new Home();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Products obj = new Products();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Employees obj = new Employees();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Bills obj = new Bills();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Loginb obj = new Loginb();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CustNameTbl.Text == "" || CustAddTbl.Text == "" || CustPhoneTbl.Text == "")
+            {
+                MessageBox.Show("Select Customer!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("update CustomerTbl set CustName=@CN,CustAdd=@CA,CustPhone=@CP where CustID=@CKey", Con);
+                    cmd.Parameters.AddWithValue("@CN", CustNameTbl.Text);
+                    cmd.Parameters.AddWithValue("@CA", CustAddTbl.Text);
+                    cmd.Parameters.AddWithValue("@CP", CustPhoneTbl.Text);
+                    cmd.Parameters.AddWithValue("@CKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Customer Updated!");
+                    Con.Close();
+                    DisplayCustomers();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+            }
+        }
+
+        //Display customers details
         private void CustomerDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             CustNameTbl.Text = CustomerDGV.SelectedRows[0].Cells[1].Value.ToString();
@@ -90,6 +159,5 @@ namespace PetShop_Management_System.UIs
                 Key = Convert.ToInt32(CustomerDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
-
     }
 }
