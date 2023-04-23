@@ -16,6 +16,7 @@ namespace PetShop_Management_System.UIs
         public AdminCus()
         {
             InitializeComponent();
+            DisplayCustomers();
         }
 
         //Connect to the database
@@ -44,6 +45,8 @@ namespace PetShop_Management_System.UIs
 
         int Key = 0;
 
+
+        //save button
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (CustNameTbl.Text == "" || CustAddTbl.Text == "" || CustPhoneTbl.Text == "")
@@ -74,7 +77,7 @@ namespace PetShop_Management_System.UIs
             }
         }
 
-        //Display customers details
+        
         
 
         private void label1_Click(object sender, EventArgs e)
@@ -105,6 +108,7 @@ namespace PetShop_Management_System.UIs
             this.Hide();
         }
 
+        //Edit button
         private void label6_Click(object sender, EventArgs e)
         {
             Loginb obj = new Loginb();
@@ -157,6 +161,35 @@ namespace PetShop_Management_System.UIs
             else
             {
                 Key = Convert.ToInt32(CustomerDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        //Delete button
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a Customer!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("delete from CustomerTbl where CustID = @CustKey", Con);
+                    cmd.Parameters.AddWithValue("@CustKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Customer Deleted!");
+                    Con.Close();
+                    DisplayCustomers();
+                    Clear();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
             }
         }
     }
