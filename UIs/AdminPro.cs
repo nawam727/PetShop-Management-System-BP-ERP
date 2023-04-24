@@ -81,28 +81,28 @@ namespace PetShop_Management_System.UIs
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Home obj = new Home();
+            AdminHome obj = new AdminHome();
             obj.Show();
             this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Employees obj = new Employees();
+            AdminEmp obj = new AdminEmp();
             obj.Show();
             this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Customers obj = new Customers();
+            AdminCus obj = new AdminCus();
             obj.Show();
             this.Hide();
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Bills obj = new Bills();
+            AdminBill obj = new AdminBill();
             obj.Show();
             this.Hide();
         }

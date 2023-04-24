@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetShop_Management_System.UIs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,6 +73,13 @@ namespace PetShop_Management_System
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            AdminLogin obj = new AdminLogin();
+            obj.Show();
+            this.Hide();
         }
     }
 }

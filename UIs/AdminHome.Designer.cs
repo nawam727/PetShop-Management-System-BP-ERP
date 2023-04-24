@@ -324,6 +324,7 @@
             this.label5.Size = new System.Drawing.Size(67, 24);
             this.label5.TabIndex = 39;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // bunifuElipse8
             // 
@@ -344,6 +345,7 @@
             this.label2.Size = new System.Drawing.Size(92, 24);
             this.label2.TabIndex = 31;
             this.label2.Text = "Products";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // bunifuElipse5
             // 
@@ -429,6 +431,7 @@
             this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 41;
             this.label6.Text = "Logout";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox5
             // 
@@ -469,6 +472,7 @@
             this.label4.Size = new System.Drawing.Size(109, 24);
             this.label4.TabIndex = 37;
             this.label4.Text = "Customers";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox3
             // 
@@ -494,6 +498,7 @@
             this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 35;
             this.label3.Text = "Employees";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // AdminHome
             // 
