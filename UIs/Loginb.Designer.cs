@@ -68,6 +68,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -98,7 +99,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(197, 475);
+            this.label4.Location = new System.Drawing.Point(187, 472);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 26);
             this.label4.TabIndex = 17;
@@ -122,12 +123,13 @@
             this.LoginBtn.IdleFillColor = System.Drawing.Color.Bisque;
             this.LoginBtn.IdleForecolor = System.Drawing.Color.Black;
             this.LoginBtn.IdleLineColor = System.Drawing.Color.Black;
-            this.LoginBtn.Location = new System.Drawing.Point(133, 413);
+            this.LoginBtn.Location = new System.Drawing.Point(123, 410);
             this.LoginBtn.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(181, 55);
             this.LoginBtn.TabIndex = 16;
             this.LoginBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // bunifuThinButton21
             // 
@@ -158,7 +160,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(112, 313);
+            this.label3.Location = new System.Drawing.Point(102, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 34);
             this.label3.TabIndex = 14;
@@ -168,7 +170,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(112, 210);
+            this.label2.Location = new System.Drawing.Point(102, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 34);
             this.label2.TabIndex = 13;
@@ -177,7 +179,7 @@
             // PasswordTb
             // 
             this.PasswordTb.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTb.Location = new System.Drawing.Point(118, 362);
+            this.PasswordTb.Location = new System.Drawing.Point(108, 359);
             this.PasswordTb.Name = "PasswordTb";
             this.PasswordTb.Size = new System.Drawing.Size(213, 31);
             this.PasswordTb.TabIndex = 12;
@@ -186,7 +188,7 @@
             // UsernameTb
             // 
             this.UsernameTb.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameTb.Location = new System.Drawing.Point(118, 258);
+            this.UsernameTb.Location = new System.Drawing.Point(108, 255);
             this.UsernameTb.Name = "UsernameTb";
             this.UsernameTb.Size = new System.Drawing.Size(213, 31);
             this.UsernameTb.TabIndex = 11;
@@ -206,6 +208,7 @@
             this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.UsernameTb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Loginb";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

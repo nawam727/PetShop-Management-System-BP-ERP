@@ -21,5 +21,10 @@ namespace PetShop_Management_System
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

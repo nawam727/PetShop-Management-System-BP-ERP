@@ -288,6 +288,7 @@
             this.TransDGV.Size = new System.Drawing.Size(450, 322);
             this.TransDGV.TabIndex = 18;
             this.TransDGV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.TransDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TransDGV_CellContentClick);
             // 
             // label14
             // 
@@ -795,6 +796,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Bills";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bills";

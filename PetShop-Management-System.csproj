@@ -145,6 +145,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UIs\AdminBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminBill.Designer.cs">
+      <DependentUpon>AdminBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminCus.Designer.cs">
+      <DependentUpon>AdminCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminEmp.Designer.cs">
+      <DependentUpon>AdminEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminPro.Designer.cs">
+      <DependentUpon>AdminPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIs\Bills.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +225,24 @@
     <Compile Include="UIs\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UIs\AdminBill.resx">
+      <DependentUpon>AdminBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminCus.resx">
+      <DependentUpon>AdminCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminEmp.resx">
+      <DependentUpon>AdminEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminPro.resx">
+      <DependentUpon>AdminPro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIs\Bills.resx">
       <DependentUpon>Bills.cs</DependentUpon>
     </EmbeddedResource>
