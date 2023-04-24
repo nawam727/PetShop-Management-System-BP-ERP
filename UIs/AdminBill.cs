@@ -39,5 +39,9 @@ namespace PetShop_Management_System.UIs
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

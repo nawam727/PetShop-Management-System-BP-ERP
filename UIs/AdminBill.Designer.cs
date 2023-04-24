@@ -191,10 +191,12 @@
             // bunifuElipse4
             // 
             this.bunifuElipse4.ElipseRadius = 20;
+            this.bunifuElipse4.TargetControl = this;
             // 
             // bunifuElipse9
             // 
             this.bunifuElipse9.ElipseRadius = 20;
+            this.bunifuElipse9.TargetControl = this;
             // 
             // pictureBox5
             // 
@@ -229,6 +231,7 @@
             // bunifuElipse12
             // 
             this.bunifuElipse12.ElipseRadius = 20;
+            this.bunifuElipse12.TargetControl = this;
             // 
             // printPreviewDialog1
             // 
@@ -315,6 +318,7 @@
             this.label1.Size = new System.Drawing.Size(66, 24);
             this.label1.TabIndex = 81;
             this.label1.Text = "Home";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 

@@ -21,5 +21,40 @@ namespace PetShop_Management_System.UIs
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            AdminPro obj = new AdminPro();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            AdminEmp obj = new AdminEmp();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            AdminCus obj = new AdminCus();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            AdminBill obj = new AdminBill();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Loginb obj = new Loginb();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

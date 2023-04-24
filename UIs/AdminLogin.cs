@@ -37,7 +37,7 @@ namespace PetShop_Management_System.UIs
                     username = UsernameTb.Text;
                     password = PasswordTb.Text;
 
-                    Home Obj = new Home();
+                    AdminHome Obj = new AdminHome();
                     Obj.Show();
                     this.Hide();
                 }
@@ -61,7 +61,7 @@ namespace PetShop_Management_System.UIs
 
             }
         }
-            private void label4_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
             Loginb Obj = new Loginb();
             Obj.Show();

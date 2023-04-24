@@ -184,6 +184,13 @@ namespace PetShop_Management_System.UIs
 
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Loginb obj = new Loginb();
+            obj.Show();
+            this.Hide();
+        }
+
         string prodname;
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
