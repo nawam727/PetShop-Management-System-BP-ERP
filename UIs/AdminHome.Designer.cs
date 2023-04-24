@@ -418,9 +418,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(67, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 24);
+            this.label7.Size = new System.Drawing.Size(118, 24);
             this.label7.TabIndex = 32;
-            this.label7.Text = "EmpName";
+            this.label7.Text = "Admin Panel";
             // 
             // label6
             // 
