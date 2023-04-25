@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.MyPogress = new System.Windows.Forms.ProgressBar();
+            this.MyProgress = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -46,12 +46,12 @@
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // MyPogress
+            // MyProgress
             // 
-            this.MyPogress.Location = new System.Drawing.Point(172, 289);
-            this.MyPogress.Name = "MyPogress";
-            this.MyPogress.Size = new System.Drawing.Size(391, 23);
-            this.MyPogress.TabIndex = 7;
+            this.MyProgress.Location = new System.Drawing.Point(172, 289);
+            this.MyProgress.Name = "MyProgress";
+            this.MyProgress.Size = new System.Drawing.Size(391, 23);
+            this.MyProgress.TabIndex = 7;
             // 
             // label1
             // 
@@ -76,7 +76,7 @@
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 10;
-            this.bunifuElipse2.TargetControl = this.MyPogress;
+            this.bunifuElipse2.TargetControl = this.MyProgress;
             // 
             // label3
             // 
@@ -108,7 +108,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(631, 349);
-            this.Controls.Add(this.MyPogress);
+            this.Controls.Add(this.MyProgress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -118,6 +118,7 @@
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Splash";
+            this.Load += new System.EventHandler(this.Splash_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,7 +128,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.ProgressBar MyPogress;
+        private System.Windows.Forms.ProgressBar MyProgress;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;

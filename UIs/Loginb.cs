@@ -25,12 +25,15 @@ namespace PetShop_Management_System
           
         }
 
+        public static String empName;
 
         //Login button
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             string username = UsernameTb.Text;
             string password = PasswordTb.Text;
+
+            empName= UsernameTb.Text;
 
             try
             {

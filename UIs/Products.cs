@@ -186,5 +186,10 @@ namespace PetShop_Management_System.UIs
             obj.Show();
             this.Hide();
         }
+
+        private void Products_Load(object sender, EventArgs e)
+        {
+            label7.Text = "Emp " + Loginb.empName;
+        }
     }
 }
