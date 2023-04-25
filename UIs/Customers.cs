@@ -192,5 +192,10 @@ namespace PetShop_Management_System
 
             }
         }
+
+        private void Customers_Load(object sender, EventArgs e)
+        {
+            label7.Text = "Emp " + Loginb.empName;
+        }
     }
 }

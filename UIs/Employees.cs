@@ -159,7 +159,7 @@ namespace PetShop_Management_System
 
         private void Employees_Load(object sender, EventArgs e)
         {
-
+            label7.Text = "Emp " + Loginb.empName;
         }
 
         private void label1_Click(object sender, EventArgs e)

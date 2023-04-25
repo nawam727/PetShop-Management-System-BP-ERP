@@ -22,12 +22,21 @@ namespace PetShop_Management_System
             CountBirds();
         }
 
+        //Connect to the database
+        //SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\DELL\OneDrive - NSBM\Documents\PetShopDb.mdf"";Integrated Security=True;Connect Timeout=30");
+
+
         private void label7_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Home_Load(object sender, EventArgs e)
+        {
+            label7.Text = "Emp " + Loginb.empName;
+        }
+
+        public void DisplayNameLable()
         {
 
         }
