@@ -197,6 +197,11 @@ namespace PetShop_Management_System
             this.Hide();
         }
 
-        
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Loginb obj = new Loginb();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
