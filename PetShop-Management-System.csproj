@@ -145,48 +145,117 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers.cs">
+    <Compile Include="UIs\AdminBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customers.Designer.cs">
+    <Compile Include="UIs\AdminBill.Designer.cs">
+      <DependentUpon>AdminBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminCus.Designer.cs">
+      <DependentUpon>AdminCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminEmp.Designer.cs">
+      <DependentUpon>AdminEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\AdminPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\AdminPro.Designer.cs">
+      <DependentUpon>AdminPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees.cs">
+    <Compile Include="UIs\Employees.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employees.Designer.cs">
+    <Compile Include="UIs\Employees.Designer.cs">
       <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="UIs\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="UIs\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Loginb.cs">
+    <Compile Include="UIs\Loginb.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Loginb.Designer.cs">
+    <Compile Include="UIs\Loginb.Designer.cs">
       <DependentUpon>Loginb.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Splash.cs">
+    <Compile Include="UIs\Products.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Splash.Designer.cs">
+    <Compile Include="UIs\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Customers.resx">
+    <EmbeddedResource Include="UIs\AdminBill.resx">
+      <DependentUpon>AdminBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminCus.resx">
+      <DependentUpon>AdminCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminEmp.resx">
+      <DependentUpon>AdminEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\AdminPro.resx">
+      <DependentUpon>AdminPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employees.resx">
+    <EmbeddedResource Include="UIs\Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="UIs\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loginb.resx">
+    <EmbeddedResource Include="UIs\Loginb.resx">
       <DependentUpon>Loginb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -199,7 +268,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Splash.resx">
+    <EmbeddedResource Include="UIs\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
