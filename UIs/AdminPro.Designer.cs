@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPro));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PrCatTbl = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.PrPriceTbl = new System.Windows.Forms.TextBox();
@@ -96,7 +96,7 @@
             "Dogs",
             "Cats",
             "Foods"});
-            this.PrCatTbl.Location = new System.Drawing.Point(296, 105);
+            this.PrCatTbl.Location = new System.Drawing.Point(23, 171);
             this.PrCatTbl.Name = "PrCatTbl";
             this.PrCatTbl.Size = new System.Drawing.Size(168, 28);
             this.PrCatTbl.TabIndex = 17;
@@ -105,7 +105,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(689, 57);
+            this.label4.Location = new System.Drawing.Point(291, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 24);
             this.label4.TabIndex = 16;
@@ -114,7 +114,7 @@
             // PrPriceTbl
             // 
             this.PrPriceTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrPriceTbl.Location = new System.Drawing.Point(695, 105);
+            this.PrPriceTbl.Location = new System.Drawing.Point(295, 96);
             this.PrPriceTbl.Name = "PrPriceTbl";
             this.PrPriceTbl.Size = new System.Drawing.Size(164, 26);
             this.PrPriceTbl.TabIndex = 15;
@@ -137,7 +137,7 @@
             this.DeleteBtn.IdleFillColor = System.Drawing.Color.Bisque;
             this.DeleteBtn.IdleForecolor = System.Drawing.Color.Black;
             this.DeleteBtn.IdleLineColor = System.Drawing.Color.Black;
-            this.DeleteBtn.Location = new System.Drawing.Point(727, 250);
+            this.DeleteBtn.Location = new System.Drawing.Point(748, 242);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(145, 39);
@@ -163,7 +163,7 @@
             this.SaveBtn.IdleFillColor = System.Drawing.Color.Bisque;
             this.SaveBtn.IdleForecolor = System.Drawing.Color.Black;
             this.SaveBtn.IdleLineColor = System.Drawing.Color.Black;
-            this.SaveBtn.Location = new System.Drawing.Point(328, 250);
+            this.SaveBtn.Location = new System.Drawing.Point(748, 107);
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(145, 39);
@@ -280,22 +280,22 @@
             // ProductDGV
             // 
             this.ProductDGV.AllowCustomTheming = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
-            this.ProductDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.ProductDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ProductDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductDGV.BackgroundColor = System.Drawing.Color.Linen;
             this.ProductDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProductDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ProductDGV.ColumnHeadersHeight = 40;
             this.ProductDGV.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.ProductDGV.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -315,14 +315,14 @@
             this.ProductDGV.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.ProductDGV.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.ProductDGV.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProductDGV.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ProductDGV.EnableHeadersVisualStyles = false;
             this.ProductDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.ProductDGV.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -387,7 +387,7 @@
             this.EditBtn.IdleFillColor = System.Drawing.Color.Bisque;
             this.EditBtn.IdleForecolor = System.Drawing.Color.Black;
             this.EditBtn.IdleLineColor = System.Drawing.Color.Black;
-            this.EditBtn.Location = new System.Drawing.Point(532, 250);
+            this.EditBtn.Location = new System.Drawing.Point(748, 174);
             this.EditBtn.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(145, 39);
@@ -399,7 +399,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(490, 57);
+            this.label13.Location = new System.Drawing.Point(19, 214);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(78, 24);
             this.label13.TabIndex = 11;
@@ -408,7 +408,7 @@
             // PrQuantityTbl
             // 
             this.PrQuantityTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrQuantityTbl.Location = new System.Drawing.Point(496, 105);
+            this.PrQuantityTbl.Location = new System.Drawing.Point(23, 250);
             this.PrQuantityTbl.Name = "PrQuantityTbl";
             this.PrQuantityTbl.Size = new System.Drawing.Size(164, 26);
             this.PrQuantityTbl.TabIndex = 10;
@@ -417,7 +417,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(290, 57);
+            this.label10.Location = new System.Drawing.Point(19, 134);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(85, 24);
             this.label10.TabIndex = 9;
@@ -427,7 +427,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(92, 57);
+            this.label9.Location = new System.Drawing.Point(19, 57);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 24);
             this.label9.TabIndex = 7;
@@ -436,7 +436,7 @@
             // PrNameTbl
             // 
             this.PrNameTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrNameTbl.Location = new System.Drawing.Point(98, 105);
+            this.PrNameTbl.Location = new System.Drawing.Point(23, 96);
             this.PrNameTbl.Name = "PrNameTbl";
             this.PrNameTbl.Size = new System.Drawing.Size(168, 26);
             this.PrNameTbl.TabIndex = 6;
