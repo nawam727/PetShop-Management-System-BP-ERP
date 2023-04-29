@@ -44,6 +44,7 @@
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label13 = new System.Windows.Forms.Label();
+            this.CustPhoneTbl = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.CustAddTbl = new System.Windows.Forms.TextBox();
@@ -72,7 +73,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.CustPhoneTbl = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomerDGV)).BeginInit();
@@ -294,6 +294,14 @@
             this.label13.Size = new System.Drawing.Size(103, 24);
             this.label13.TabIndex = 11;
             this.label13.Text = "Contact No";
+            // 
+            // CustPhoneTbl
+            // 
+            this.CustPhoneTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustPhoneTbl.Location = new System.Drawing.Point(248, 98);
+            this.CustPhoneTbl.Name = "CustPhoneTbl";
+            this.CustPhoneTbl.Size = new System.Drawing.Size(186, 26);
+            this.CustPhoneTbl.TabIndex = 10;
             // 
             // label11
             // 
@@ -540,14 +548,6 @@
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // CustPhoneTbl
-            // 
-            this.CustPhoneTbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustPhoneTbl.Location = new System.Drawing.Point(248, 98);
-            this.CustPhoneTbl.Name = "CustPhoneTbl";
-            this.CustPhoneTbl.Size = new System.Drawing.Size(186, 26);
-            this.CustPhoneTbl.TabIndex = 10;
-            // 
             // AdminCus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,6 +569,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminCus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminCus";

@@ -201,7 +201,7 @@ namespace PetShop_Management_System.UIs
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString("Pet Hotel Pet Care Center", new Font("FAKE RECEIPT", 12, FontStyle.Bold), Brushes.Black, new Point(80));
+            e.Graphics.DrawString("Pet Hotel Pet Care Center", new Font("FAKE RECEIPT", 12, FontStyle.Bold), Brushes.Black, new Point(50));
             e.Graphics.DrawString("ID PRODUCT PRICE QUANTITY TOTAL", new Font("FAKE RECEIPT", 10, FontStyle.Bold), Brushes.Black, new Point(26, 20));
             foreach (DataGridViewRow row in BillDGV.Rows)
             {
