@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PetShop_Management_System.Program" Collapsed="true">
+    <Position X="53" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Customers">
+    <Position X="46" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>tgBAJBQAgSggARUAAgCAQABCAAUAgOkeAAAgAQRAAAA=</HashCode>
+      <FileName>UIs\Customers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Employees">
+    <Position X="23.5" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>9wFAJgQCgSAgARQAAACkQABCAAVggOE+ASAgAQBAAAA=</HashCode>
+      <FileName>UIs\Employees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Home">
+    <Position X="30.25" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>cAAkIjQAACADARQAAASAUAACAAEAAOEeUAAgAQBAAAA=</HashCode>
+      <FileName>UIs\Home.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Loginb">
+    <Position X="39.25" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAQAACAAABAAAACABAQCAQEAAoAAAAAAQQBAIAA=</HashCode>
+      <FileName>UIs\Loginb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Splash">
+    <Position X="48.25" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAACAACAAABAgAACAAAACAAAAIMgABAAAAABCAAA=</HashCode>
+      <FileName>UIs\Splash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Properties.Resources" Collapsed="true">
+    <Position X="54.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.Properties.Settings" Collapsed="true">
+    <Position X="53" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.AdminBill">
+    <Position X="25.75" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQACIhYAACAAARQAAACAQAECAgEAgOMeAEAAAQRAAAA=</HashCode>
+      <FileName>UIs\AdminBill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.AdminCus">
+    <Position X="32.5" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>tgBAJBQAgSggARUAAgCAQAACAAUAgOkeAAAgAQBAAAA=</HashCode>
+      <FileName>UIs\AdminCus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.AdminEmp">
+    <Position X="41.5" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>9wFAJgQAgSAgARQAAACkQABCAAVggOE+AQAgAQBAAAA=</HashCode>
+      <FileName>UIs\AdminEmp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.AdminHome">
+    <Position X="50.5" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>cAAAIjQAACADERQAAASAUAACAAEAAOEeUAAgAQBAAAA=</HashCode>
+      <FileName>UIs\AdminHome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.AdminLogin">
+    <Position X="28" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAABAAAACABAQCAQEAAoAAAAAAQQBAIAA=</HashCode>
+      <FileName>UIs\AdminLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.AdminPro">
+    <Position X="34.75" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>lgBAJBQAgSEjARQAEACAQQACAAUAgOEeAAIgAQBAAgA=</HashCode>
+      <FileName>UIs\AdminPro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.Bills">
+    <Position X="37" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>9wMCIxYAACEBBRUBUBKJSYECggGggOMekFIAAQTBgoA=</HashCode>
+      <FileName>UIs\Bills.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetShop_Management_System.UIs.Products">
+    <Position X="43.75" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>lgBAJBQAgSErARQAEACAQQACAAUAgOEeAAIgAQBAAgA=</HashCode>
+      <FileName>UIs\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="37" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="System.Windows.Forms.Form.ControlCollection" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

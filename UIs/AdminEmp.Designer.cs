@@ -108,7 +108,7 @@
             this.DeleteBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.DeleteBtn.ActiveForecolor = System.Drawing.Color.White;
             this.DeleteBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.DeleteBtn.BackColor = System.Drawing.Color.Linen;
+            this.DeleteBtn.BackColor = System.Drawing.Color.Azure;
             this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
             this.DeleteBtn.ButtonText = "Delete";
             this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -116,7 +116,7 @@
             this.DeleteBtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.DeleteBtn.IdleBorderThickness = 1;
             this.DeleteBtn.IdleCornerRadius = 20;
-            this.DeleteBtn.IdleFillColor = System.Drawing.Color.Bisque;
+            this.DeleteBtn.IdleFillColor = System.Drawing.Color.PaleTurquoise;
             this.DeleteBtn.IdleForecolor = System.Drawing.Color.Black;
             this.DeleteBtn.IdleLineColor = System.Drawing.Color.Black;
             this.DeleteBtn.Location = new System.Drawing.Point(727, 250);
@@ -134,7 +134,7 @@
             this.EditBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.EditBtn.ActiveForecolor = System.Drawing.Color.White;
             this.EditBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.EditBtn.BackColor = System.Drawing.Color.Linen;
+            this.EditBtn.BackColor = System.Drawing.Color.Azure;
             this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
             this.EditBtn.ButtonText = "Edit";
             this.EditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -142,7 +142,7 @@
             this.EditBtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.EditBtn.IdleBorderThickness = 1;
             this.EditBtn.IdleCornerRadius = 20;
-            this.EditBtn.IdleFillColor = System.Drawing.Color.Bisque;
+            this.EditBtn.IdleFillColor = System.Drawing.Color.PaleTurquoise;
             this.EditBtn.IdleForecolor = System.Drawing.Color.Black;
             this.EditBtn.IdleLineColor = System.Drawing.Color.Black;
             this.EditBtn.Location = new System.Drawing.Point(532, 250);
@@ -160,7 +160,7 @@
             this.SaveBtn.ActiveFillColor = System.Drawing.Color.SeaGreen;
             this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
             this.SaveBtn.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.SaveBtn.BackColor = System.Drawing.Color.Linen;
+            this.SaveBtn.BackColor = System.Drawing.Color.Azure;
             this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
             this.SaveBtn.ButtonText = "Save";
             this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -168,7 +168,7 @@
             this.SaveBtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.SaveBtn.IdleBorderThickness = 1;
             this.SaveBtn.IdleCornerRadius = 20;
-            this.SaveBtn.IdleFillColor = System.Drawing.Color.Bisque;
+            this.SaveBtn.IdleFillColor = System.Drawing.Color.PaleTurquoise;
             this.SaveBtn.IdleForecolor = System.Drawing.Color.Black;
             this.SaveBtn.IdleLineColor = System.Drawing.Color.Black;
             this.SaveBtn.Location = new System.Drawing.Point(328, 250);
@@ -191,7 +191,7 @@
             // 
             // DOBTbl
             // 
-            this.DOBTbl.BackColor = System.Drawing.Color.Bisque;
+            this.DOBTbl.BackColor = System.Drawing.Color.PaleTurquoise;
             this.DOBTbl.BorderRadius = 5;
             this.DOBTbl.Color = System.Drawing.Color.Silver;
             this.DOBTbl.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
@@ -272,7 +272,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.EmployeesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.EmployeesDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.EmployeesDGV.BackgroundColor = System.Drawing.Color.Linen;
+            this.EmployeesDGV.BackgroundColor = System.Drawing.Color.Azure;
             this.EmployeesDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmployeesDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.EmployeesDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -389,7 +389,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Linen;
+            this.panel3.BackColor = System.Drawing.Color.Azure;
             this.panel3.Controls.Add(this.DeleteBtn);
             this.panel3.Controls.Add(this.EditBtn);
             this.panel3.Controls.Add(this.SaveBtn);
@@ -620,7 +620,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1300, 738);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);

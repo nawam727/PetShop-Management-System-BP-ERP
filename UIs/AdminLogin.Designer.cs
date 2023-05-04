@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Bisque;
+            this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -122,7 +122,7 @@
             this.LoginBtn.ForeColor = System.Drawing.Color.SeaGreen;
             this.LoginBtn.IdleBorderThickness = 1;
             this.LoginBtn.IdleCornerRadius = 20;
-            this.LoginBtn.IdleFillColor = System.Drawing.Color.Bisque;
+            this.LoginBtn.IdleFillColor = System.Drawing.Color.PaleTurquoise;
             this.LoginBtn.IdleForecolor = System.Drawing.Color.Black;
             this.LoginBtn.IdleLineColor = System.Drawing.Color.Black;
             this.LoginBtn.Location = new System.Drawing.Point(123, 410);
