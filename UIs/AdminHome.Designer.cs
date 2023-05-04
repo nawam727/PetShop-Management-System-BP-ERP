@@ -147,7 +147,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Bisque;
+            this.panel6.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel6.Controls.Add(this.BirdsLbl);
             this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.pictureBox11);
@@ -188,7 +188,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Bisque;
+            this.panel5.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel5.Controls.Add(this.DogsLbl);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.pictureBox10);
@@ -229,7 +229,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Bisque;
+            this.panel4.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel4.Controls.Add(this.CatsLbl);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.pictureBox9);
@@ -271,7 +271,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Linen;
+            this.panel3.BackColor = System.Drawing.Color.Azure;
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Controls.Add(this.label8);
@@ -504,7 +504,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1300, 738);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);

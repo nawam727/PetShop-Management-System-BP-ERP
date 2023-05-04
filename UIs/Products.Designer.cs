@@ -287,7 +287,11 @@
             "Birds",
             "Dogs",
             "Cats",
-            "Foods"});
+            "Foods",
+            "Health and Care Products",
+            "Toys",
+            "Collars",
+            "Training and Aids"});
             this.PrCatTbl.Location = new System.Drawing.Point(296, 105);
             this.PrCatTbl.Name = "PrCatTbl";
             this.PrCatTbl.Size = new System.Drawing.Size(168, 28);
