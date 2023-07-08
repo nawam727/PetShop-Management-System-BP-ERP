@@ -39,5 +39,7 @@ Overall, the PetShop Management System provides a comprehensive solution for man
   <img src="https://avatars.githubusercontent.com/u/95732242?v=4" alt="username" width="100">
   <img src="https://avatars.githubusercontent.com/u/90084004?v=4" alt="username" width="100">
   <img src="https://avatars.githubusercontent.com/u/97431820?v=4" alt="username" width="100">
-
 </p>
+
+## Project Walk-through video link
+https://youtu.be/Av-iBggICo8
